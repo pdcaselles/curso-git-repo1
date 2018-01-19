@@ -25,37 +25,15 @@ body {
     flex: 1;
   }
   
-  Cambiamos el index.html
-  
-      Carga el fichero index.html en Visual Studio Code y añade los siguientes cambios:
-  
-     <h1>Header</h1>
-  
-  +  <nav>
-  
-     <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">Nuestro equipo</a></li>
-       <li><a href="#">Projectos</a></li>
-       <li><a href="#">Contacto</a></li>
-     </ul>
-  
-  +  </nav>
-  
-      Comprueba en el navegador que el cambio funciona correctamente.
-  
-  Realizamos el commit
-  
-      Si hacemos git status veremos la siguiente información:
-  
-      Hay ficheros modificados y los cambios no se han añadido al stage.
-      Para incluir los cambios en el stage hay que hacer git add o git commit -a. Este último comando realiza directamente el commit de todos los cambios existentes sin pasar por el stage.
-      Hacemos esta vez la última sugerencia:
-  
-  $ git commit -am "Añadimos cabecera de navegación"
-  
-  [master 0e1ceb4] Añadimos cabecera de navegación
-   2 files changed, 25 insertions(+)
-  
-  45
-  Nuevo commit: cabecera de navegación Añade en el css lo siguiente: nav { height: 100px; display: flex; } nav img { flex-basis: auto; } nav ul { padding: 0; list-style-type: none; flex: 2; display: flex; } nav li { display: inline; text-align: center; flex: 1; } 
+  main {
+      display: flex;
+    }
+    
+    article {
+      flex: 4;
+    }
+    
+    aside {
+      flex: 1;
+      margin-left: 10px;
+    }
